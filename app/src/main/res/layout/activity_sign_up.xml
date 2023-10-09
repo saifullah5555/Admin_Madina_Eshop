@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="utf-8"?>
+ <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".SignUpActivity">
+
+
+    <TextView
+            android:id="@+id/textView15"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:fontFamily="@font/en_4"
+            android:text="Design By  M Saifullah Bin Siraz"
+            android:textAlignment="center"
+            android:textColor="@color/green"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/Back_Login_Text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="8dp"
+        android:drawableLeft="@drawable/user_plus"
+        android:drawablePadding="9dp"
+        android:fontFamily="@font/en_4"
+        android:text="Already Have An Account?"
+        android:textColor="#FF5722"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/RagisterBtn" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/RagisterBtn"
+            android:layout_width="140dp"
+            android:layout_height="50dp"
+            android:layout_marginBottom="45dp"
+            android:background="@drawable/greenbuttongradient"
+            android:elevation="6dp"
+            android:fontFamily="@font/kalpurush"
+            android:text="রেজিষ্টেশন করুন"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toTopOf="@+id/textView15"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/PasswordSignUp" />
+
+    <EditText
+        android:id="@+id/PasswordSignUp"
+        android:layout_width="325dp"
+        android:layout_height="57dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/edittextshape"
+        android:drawableLeft="@drawable/lock"
+        android:drawablePadding="5dp"
+        android:elevation="6dp"
+        android:ems="10"
+        android:fontFamily="@font/kalpurush"
+        android:hint="আপনার পাসওয়ার্ড টি লিখুন"
+        android:inputType="textPassword"
+        android:paddingLeft="9dp"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="@+id/EmailAddressSignUp"
+        app:layout_constraintStart_toStartOf="@+id/EmailAddressSignUp"
+        app:layout_constraintTop_toBottomOf="@+id/EmailAddressSignUp" />
+
+    <EditText
+        android:id="@+id/EmailAddressSignUp"
+        android:layout_width="325dp"
+        android:layout_height="57dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/edittextshape"
+        android:drawableLeft="@drawable/mail"
+        android:drawablePadding="5dp"
+        android:elevation="6dp"
+        android:ems="10"
+        android:fontFamily="@font/kalpurush"
+        android:hint="আপনার ফোন নাম্বার/ইমেইল টি লিখুন"
+        android:inputType="textEmailAddress"
+        android:paddingLeft="9dp"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="@+id/NameStoreSignUp"
+        app:layout_constraintStart_toStartOf="@+id/NameStoreSignUp"
+        app:layout_constraintTop_toBottomOf="@+id/NameStoreSignUp" />
+
+    <TextView
+        android:id="@+id/textView17"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:fontFamily="@font/kalpurush"
+        android:text="Sign Up Here\nFor Your  Admin Dashboard"
+        android:textAlignment="center"
+        android:textColor="#FF5722"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="@+id/textView14"
+        app:layout_constraintStart_toStartOf="@+id/textView14"
+        app:layout_constraintTop_toBottomOf="@+id/textView14" />
+
+        <TextView
+            android:id="@+id/textView14"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/sagarnormal"
+            android:text="ইসলামিক ও নিত্য প্রয়োজনীয় পন্যের সমাহার"
+            android:textColor="@color/green"
+            android:textSize="24sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView4" />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/bensenhndwriting"
+            android:text="মাদিনা ইশপ.কম"
+            android:textColor="@color/green"
+            android:textSize="40sp"
+            app:layout_constraintEnd_toEndOf="@+id/imageView7"
+            app:layout_constraintStart_toStartOf="@+id/imageView7"
+            app:layout_constraintTop_toBottomOf="@+id/imageView7" />
+
+    <ImageView
+        android:id="@+id/imageView7"
+        android:layout_width="107dp"
+        android:layout_height="46dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/madinaap_logo" />
+
+    <EditText
+        android:id="@+id/NameStoreSignUp"
+        android:layout_width="325dp"
+        android:layout_height="57dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/edittextshape"
+        android:drawableLeft="@drawable/storegoogle"
+        android:drawablePadding="9dp"
+        android:elevation="6dp"
+        android:ems="10"
+        android:fontFamily="@font/kalpurush"
+        android:hint="আপনার দোকানের নাম লিখুন"
+        android:inputType="text"
+        android:paddingLeft="9dp"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="@+id/NameUserSignUp"
+        app:layout_constraintStart_toStartOf="@+id/NameUserSignUp"
+        app:layout_constraintTop_toBottomOf="@+id/NameUserSignUp" />
+
+    <EditText
+        android:id="@+id/NameUserSignUp"
+        android:layout_width="325dp"
+        android:layout_height="57dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/edittextshape"
+        android:drawableLeft="@drawable/user_plus"
+        android:drawablePadding="9dp"
+        android:elevation="6dp"
+        android:ems="10"
+        android:fontFamily="@font/kalpurush"
+        android:hint="আপনার নাম লিখুন"
+        android:inputType="text"
+        android:paddingLeft="9dp"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="@+id/textView17"
+        app:layout_constraintStart_toStartOf="@+id/textView17"
+        app:layout_constraintTop_toBottomOf="@+id/textInputLayout" />
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/en_4"
+        android:text="Choose Location"
+        android:textColor="@color/green"
+        app:layout_constraintBottom_toTopOf="@+id/textInputLayout"
+        app:layout_constraintStart_toStartOf="@+id/textInputLayout"
+        app:layout_constraintTop_toBottomOf="@+id/textView17" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textInputLayout"
+        android:layout_width="325dp"
+        android:layout_height="60dp"
+        android:elevation="6dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:endIconDrawable="@drawable/arrow_down"
+        android:background="@drawable/edittextshape"
+        app:endIconTint="@color/black"
+        style="@style/Widget.Material3.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+        app:boxStrokeWidthFocused="0dp"
+        app:boxStrokeWidth="0dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView17">
+
+        <AutoCompleteTextView
+            android:id="@+id/listOfLocation"
+            android:layout_width="match_parent"
+            android:layout_height="57dp"
+            android:background="@android:color/transparent"
+            android:fontFamily="@font/kalpurush"
+            android:gravity="start"
+
+            android:inputType="none"
+            android:paddingBottom="20dp"
+            android:text="Choose Location"
+            android:textColor="@color/black" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
