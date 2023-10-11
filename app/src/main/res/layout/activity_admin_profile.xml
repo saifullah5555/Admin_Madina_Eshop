@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".AdminProfileActivity">
+
+    <TextView
+        android:id="@+id/textView24"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:fontFamily="@font/en_4"
+        android:text="Design By  M Saifullah Bin Siraz"
+        android:textAlignment="center"
+        android:textColor="@color/green"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/SaveButtonAdmin"
+        android:layout_width="140dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="32dp"
+        android:background="@drawable/greenbuttongradient"
+        android:elevation="6dp"
+        android:fontFamily="@font/kalpurush"
+        android:text="সেভ করুন"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/textView24"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/PasswordAdmin" />
+
+    <EditText
+        android:id="@+id/PhoneAdmin"
+        android:layout_width="325dp"
+        android:layout_height="57dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/edittextshape"
+        android:drawableLeft="@drawable/mail"
+        android:drawablePadding="5dp"
+        android:elevation="6dp"
+        android:ems="10"
+        android:fontFamily="@font/kalpurush"
+        android:hint="আপনার ফোন নাম্বার টি লিখুন"
+        android:inputType="phone"
+        android:paddingLeft="9dp"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="@+id/AddressAdmin"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/AddressAdmin"
+        app:layout_constraintTop_toBottomOf="@+id/EmailAdmin" />
+
+    <EditText
+        android:id="@+id/PasswordAdmin"
+        android:layout_width="325dp"
+        android:layout_height="57dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/edittextshape"
+        android:drawableLeft="@drawable/lock"
+        android:drawablePadding="5dp"
+        android:elevation="6dp"
+        android:ems="10"
+        android:fontFamily="@font/kalpurush"
+        android:hint="আপনার পাসওয়ার্ড টি লিখুন"
+        android:inputType="textPassword"
+        android:paddingLeft="9dp"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="@+id/PhoneAdmin"
+        app:layout_constraintStart_toStartOf="@+id/PhoneAdmin"
+        app:layout_constraintTop_toBottomOf="@+id/PhoneAdmin" />
+
+    <EditText
+        android:id="@+id/EmailAdmin"
+        android:layout_width="325dp"
+        android:layout_height="57dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/edittextshape"
+        android:drawableLeft="@drawable/mail"
+        android:drawablePadding="5dp"
+        android:elevation="6dp"
+        android:ems="10"
+        android:fontFamily="@font/kalpurush"
+        android:hint="আপনার ইমেইল টি লিখুন"
+        android:inputType="textEmailAddress"
+        android:paddingLeft="9dp"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="@+id/AddressAdmin"
+        app:layout_constraintStart_toStartOf="@+id/AddressAdmin"
+        app:layout_constraintTop_toBottomOf="@+id/AddressAdmin" />
+
+    <EditText
+        android:id="@+id/AddressAdmin"
+        android:layout_width="325dp"
+        android:layout_height="170dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/edittextshape"
+        android:drawableLeft="@drawable/storegoogle"
+        android:drawablePadding="9dp"
+        android:elevation="6dp"
+        android:ems="10"
+        android:fontFamily="@font/kalpurush"
+        android:hint="আপনার ঠিকানা টি লিখুন"
+        android:inputType="text"
+        android:paddingLeft="9dp"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="@+id/NameAdmin"
+        app:layout_constraintStart_toStartOf="@+id/NameAdmin"
+        app:layout_constraintTop_toBottomOf="@+id/NameAdmin" />
+
+    <EditText
+        android:id="@+id/NameAdmin"
+        android:layout_width="325dp"
+        android:layout_height="57dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/edittextshape"
+        android:drawableLeft="@drawable/user_plus"
+        android:drawablePadding="9dp"
+        android:elevation="6dp"
+        android:ems="10"
+        android:fontFamily="@font/kalpurush"
+        android:hint="আপনার নাম লিখুন"
+        android:inputType="text"
+        android:paddingLeft="9dp"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/EditeButtonAdmin" />
+
+    <ImageButton
+        android:id="@+id/backButton"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:background="@android:color/transparent"
+        android:src="@drawable/arrow_left"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView20"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/en_4"
+        android:text="Admin Profile"
+        android:textColor="@color/black"
+        android:textSize="40sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.387"
+        app:layout_constraintStart_toEndOf="@+id/backButton"
+        app:layout_constraintTop_toTopOf="@+id/backButton" />
+
+    <TextView
+        android:id="@+id/EditeButtonAdmin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp"
+        android:clickable="true"
+        android:drawableLeft="@drawable/edit"
+        android:fontFamily="@font/en_4"
+        android:gravity="center"
+        android:text=" Edite Your Profile"
+        android:textColor="@color/green"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView20" />
+
+    <TextView
+        android:id="@+id/textView22"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/en_4"
+        android:text="Edite Your Profile"
+        android:textColor="@color/green"
+        app:layout_constraintStart_toStartOf="@+id/backButton"
+        app:layout_constraintTop_toBottomOf="@+id/textView20" />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

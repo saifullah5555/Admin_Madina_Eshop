@@ -22,7 +22,7 @@
             android:layout_height="match_parent">
 
             <ImageButton
-                android:id="@+id/BackButtonForAddItem"
+                android:id="@+id/backButton"
                 android:layout_width="30dp"
                 android:layout_height="30dp"
                 android:layout_marginStart="16dp"
@@ -42,8 +42,8 @@
                 android:textSize="40sp"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.387"
-                app:layout_constraintStart_toEndOf="@+id/BackButtonForAddItem"
-                app:layout_constraintTop_toTopOf="@+id/BackButtonForAddItem" />
+                app:layout_constraintStart_toEndOf="@+id/backButton"
+                app:layout_constraintTop_toTopOf="@+id/backButton" />
 
             <EditText
                 android:id="@+id/enterfoodname"

@@ -16,7 +16,7 @@ class AddItemActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(binding.root)
 
-        binding.BackButtonForAddItem.setOnClickListener {
+        binding.backButton.setOnClickListener {
             finish()
         }
 

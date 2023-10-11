@@ -189,17 +189,17 @@
     //2
 
     <androidx.cardview.widget.CardView
-        android:id="@+id/cardView2"
+        android:id="@+id/orderDispatch"
         android:layout_width="150dp"
         android:layout_height="100dp"
         android:layout_marginTop="60dp"
         android:background="@drawable/cardgreen"
         android:outlineSpotShadowColor="@color/green"
         app:cardCornerRadius="15dp"
-        app:layout_constraintEnd_toEndOf="@+id/cardView4"
+        app:layout_constraintEnd_toEndOf="@+id/Profile"
         app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/cardView4"
-        app:layout_constraintTop_toBottomOf="@+id/cardView4">
+        app:layout_constraintStart_toStartOf="@+id/Profile"
+        app:layout_constraintTop_toBottomOf="@+id/Profile">
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
@@ -323,7 +323,7 @@
     //4
 
     <androidx.cardview.widget.CardView
-        android:id="@+id/cardView4"
+        android:id="@+id/Profile"
         android:layout_width="150dp"
         android:layout_height="100dp"
         android:layout_marginStart="8dp"
@@ -383,6 +383,7 @@
         app:layout_constraintTop_toTopOf="@+id/cardView3">
 
         <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/AllItemMenu"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:background="@drawable/cardgreen">
