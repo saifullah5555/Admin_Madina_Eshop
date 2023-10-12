@@ -74,13 +74,13 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:src="@drawable/attantion"
-                app:layout_constraintEnd_toEndOf="@+id/textView10"
+                app:layout_constraintEnd_toEndOf="@+id/PendingOrderBtn"
                 app:layout_constraintHorizontal_bias="0.51"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="@+id/guideline2" />
 
             <TextView
-                android:id="@+id/textView10"
+                android:id="@+id/PendingOrderBtn"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="16dp"
@@ -100,9 +100,9 @@
                 android:textColor="@color/black"
                 android:textSize="20sp"
                 app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="@+id/textView10"
+                app:layout_constraintEnd_toEndOf="@+id/PendingOrderBtn"
                 app:layout_constraintStart_toStartOf="@+id/guideline"
-                app:layout_constraintTop_toBottomOf="@+id/textView10" />
+                app:layout_constraintTop_toBottomOf="@+id/PendingOrderBtn" />
 
             <ImageView
                 android:id="@+id/imageView6"
@@ -128,7 +128,7 @@
                 android:textSize="14sp"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.185"
-                app:layout_constraintStart_toEndOf="@+id/textView10"
+                app:layout_constraintStart_toEndOf="@+id/PendingOrderBtn"
                 app:layout_constraintTop_toBottomOf="@+id/imageView6" />
 
             <TextView
@@ -240,9 +240,9 @@
         android:background="@drawable/cardgreen"
         android:outlineSpotShadowColor="@color/green"
         app:cardCornerRadius="15dp"
-        app:layout_constraintEnd_toEndOf="@+id/cardView5"
-        app:layout_constraintStart_toStartOf="@+id/cardView5"
-        app:layout_constraintTop_toBottomOf="@+id/cardView5">
+        app:layout_constraintEnd_toEndOf="@+id/CteatNewUserCard"
+        app:layout_constraintStart_toStartOf="@+id/CteatNewUserCard"
+        app:layout_constraintTop_toBottomOf="@+id/CteatNewUserCard">
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
@@ -278,7 +278,7 @@
     //3
 
     <androidx.cardview.widget.CardView
-        android:id="@+id/cardView5"
+        android:id="@+id/CteatNewUserCard"
         android:layout_width="150dp"
         android:layout_height="100dp"
         android:layout_marginTop="60dp"

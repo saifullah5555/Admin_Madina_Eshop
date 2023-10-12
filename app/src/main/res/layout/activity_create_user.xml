@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".CreateUserActivity">
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@+id/imageView5"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/wellcome_main" />
+
+
+    <ImageButton
+        android:id="@+id/backButton"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="80dp"
+        android:background="@android:color/transparent"
+        android:src="@drawable/arrow_left"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="113dp"
+        android:layout_height="57dp"
+        app:layout_constraintBottom_toTopOf="@+id/textView6"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView4"
+        app:srcCompat="@drawable/madinaap_logo" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/bensenhndwriting"
+        android:text="মাদিনা ইশপ.কম"
+        android:textColor="@color/green"
+        android:textSize="40sp"
+        app:layout_constraintEnd_toEndOf="@+id/imageView5"
+        app:layout_constraintStart_toStartOf="@+id/imageView5"
+        app:layout_constraintTop_toBottomOf="@+id/imageView5" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/en_3"
+        android:text="Create New User Admin"
+        android:textColor="#FD6818"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView6" />
+
+
+    <EditText
+        android:id="@+id/NameUserSignUp"
+        android:layout_width="345dp"
+        android:layout_height="65dp"
+        android:layout_marginTop="32dp"
+        android:background="@drawable/edittextshape"
+        android:drawableLeft="@drawable/user_plus"
+        android:drawablePadding="9dp"
+        android:elevation="6dp"
+        android:ems="10"
+        android:fontFamily="@font/kalpurush"
+        android:hint=" Name"
+        android:inputType="text"
+        android:paddingLeft="9dp"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="@+id/textView5"
+        app:layout_constraintStart_toStartOf="@+id/textView5"
+        app:layout_constraintTop_toBottomOf="@+id/textView5" />
+
+    <EditText
+        android:id="@+id/editTextTextEmailAddress"
+        android:layout_width="345dp"
+        android:layout_height="65dp"
+        android:layout_marginTop="32dp"
+        android:background="@drawable/edittextshape"
+        android:drawableLeft="@drawable/mail"
+        android:drawablePadding="5dp"
+        android:elevation="6dp"
+        android:ems="10"
+        android:fontFamily="@font/kalpurush"
+        android:hint="  Email"
+        android:inputType="textEmailAddress"
+        android:paddingLeft="9dp"
+        android:textColor="@color/black"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toEndOf="@+id/NameUserSignUp"
+        app:layout_constraintStart_toStartOf="@+id/NameUserSignUp"
+        app:layout_constraintTop_toBottomOf="@+id/NameUserSignUp" />
+
+    <EditText
+        android:id="@+id/editTextTextPassword"
+        android:layout_width="345dp"
+        android:layout_height="65dp"
+        android:layout_marginTop="32dp"
+        android:background="@drawable/edittextshape"
+        android:drawableLeft="@drawable/lock"
+        android:drawablePadding="5dp"
+        android:elevation="6dp"
+        android:ems="10"
+        android:fontFamily="@font/kalpurush"
+        android:hint="  Password"
+        android:inputType="textPassword"
+        android:paddingLeft="9dp"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="@+id/editTextTextEmailAddress"
+        app:layout_constraintStart_toStartOf="@+id/editTextTextEmailAddress"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextEmailAddress" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/CreatNewUserBtn"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginBottom="45dp"
+        android:background="@drawable/greenbuttongradient"
+        android:elevation="6dp"
+        android:fontFamily="@font/en_4"
+        android:text="Create New User"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/textView15"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextPassword" />
+
+    <TextView
+        android:id="@+id/textView15"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:fontFamily="@font/en_4"
+        android:text="Design By  M Saifullah Bin Siraz"
+        android:textAlignment="center"
+        android:textColor="@color/green"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
