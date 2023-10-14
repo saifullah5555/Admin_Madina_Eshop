@@ -66,7 +66,7 @@
 
 
     <EditText
-        android:id="@+id/NameUserSignUp"
+        android:id="@+id/nameUserSignUp"
         android:layout_width="345dp"
         android:layout_height="65dp"
         android:layout_marginTop="32dp"
@@ -86,7 +86,7 @@
         app:layout_constraintTop_toBottomOf="@+id/textView5" />
 
     <EditText
-        android:id="@+id/editTextTextEmailAddress"
+        android:id="@+id/AdminEmailLogin"
         android:layout_width="345dp"
         android:layout_height="65dp"
         android:layout_marginTop="32dp"
@@ -101,12 +101,12 @@
         android:paddingLeft="9dp"
         android:textColor="@color/black"
         android:textSize="15sp"
-        app:layout_constraintEnd_toEndOf="@+id/NameUserSignUp"
-        app:layout_constraintStart_toStartOf="@+id/NameUserSignUp"
-        app:layout_constraintTop_toBottomOf="@+id/NameUserSignUp" />
+        app:layout_constraintEnd_toEndOf="@+id/nameUserSignUp"
+        app:layout_constraintStart_toStartOf="@+id/nameUserSignUp"
+        app:layout_constraintTop_toBottomOf="@+id/nameUserSignUp" />
 
     <EditText
-        android:id="@+id/editTextTextPassword"
+        android:id="@+id/AdminPasswordLogin"
         android:layout_width="345dp"
         android:layout_height="65dp"
         android:layout_marginTop="32dp"
@@ -121,9 +121,9 @@
         android:paddingLeft="9dp"
         android:textColor="@color/black"
         android:textSize="16sp"
-        app:layout_constraintEnd_toEndOf="@+id/editTextTextEmailAddress"
-        app:layout_constraintStart_toStartOf="@+id/editTextTextEmailAddress"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextEmailAddress" />
+        app:layout_constraintEnd_toEndOf="@+id/AdminEmailLogin"
+        app:layout_constraintStart_toStartOf="@+id/AdminEmailLogin"
+        app:layout_constraintTop_toBottomOf="@+id/AdminEmailLogin" />
 
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/CreatNewUserBtn"
@@ -140,7 +140,7 @@
         app:layout_constraintBottom_toTopOf="@+id/textView15"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextPassword" />
+        app:layout_constraintTop_toBottomOf="@+id/AdminPasswordLogin" />
 
     <TextView
         android:id="@+id/textView15"

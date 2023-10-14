@@ -84,7 +84,7 @@
             app:layout_constraintTop_toBottomOf="@+id/textView5" />
 
         <EditText
-            android:id="@+id/editTextTextEmailAddress"
+            android:id="@+id/email"
             android:layout_width="325dp"
             android:layout_height="57dp"
             android:layout_marginTop="16dp"
@@ -104,7 +104,7 @@
             app:layout_constraintTop_toBottomOf="@+id/textView11" />
 
         <EditText
-            android:id="@+id/editTextTextPassword"
+            android:id="@+id/password"
             android:layout_width="325dp"
             android:layout_height="57dp"
             android:layout_marginTop="16dp"
@@ -119,9 +119,9 @@
             android:paddingLeft="9dp"
             android:textColor="@color/black"
             android:textSize="16sp"
-            app:layout_constraintEnd_toEndOf="@+id/editTextTextEmailAddress"
-            app:layout_constraintStart_toStartOf="@+id/editTextTextEmailAddress"
-            app:layout_constraintTop_toBottomOf="@+id/editTextTextEmailAddress" />
+            app:layout_constraintEnd_toEndOf="@+id/email"
+            app:layout_constraintStart_toStartOf="@+id/email"
+            app:layout_constraintTop_toBottomOf="@+id/email" />
 
         <TextView
             android:id="@+id/textView12"
@@ -130,9 +130,9 @@
             android:layout_marginTop="8dp"
             android:fontFamily="@font/kalpurush"
             android:text="অথবা"
-            app:layout_constraintEnd_toEndOf="@+id/editTextTextPassword"
-            app:layout_constraintStart_toStartOf="@+id/editTextTextPassword"
-            app:layout_constraintTop_toBottomOf="@+id/editTextTextPassword" />
+            app:layout_constraintEnd_toEndOf="@+id/password"
+            app:layout_constraintStart_toStartOf="@+id/password"
+            app:layout_constraintTop_toBottomOf="@+id/password" />
 
         <TextView
             android:id="@+id/textView13"
@@ -196,7 +196,7 @@
             tools:ignore="UnknownId" />
 
         <androidx.appcompat.widget.AppCompatButton
-            android:id="@+id/nextButton3"
+            android:id="@+id/AdminLoginBtn"
             android:layout_width="140dp"
             android:layout_height="57dp"
             android:layout_marginTop="16dp"
@@ -207,7 +207,7 @@
             android:text="লগইন করুন"
             android:textColor="#FFFFFF"
             android:textSize="20sp"
-            app:layout_constraintBottom_toTopOf="@+id/nextButton3"
+            app:layout_constraintBottom_toTopOf="@+id/AdminLoginBtn"
 
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
@@ -227,7 +227,7 @@
             android:textSize="16sp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/nextButton3" />
+            app:layout_constraintTop_toBottomOf="@+id/AdminLoginBtn" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

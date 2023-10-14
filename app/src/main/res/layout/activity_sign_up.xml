@@ -37,10 +37,10 @@
         android:textSize="16sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/RagisterBtn" />
+        app:layout_constraintTop_toBottomOf="@+id/ragisterBtn" />
 
         <androidx.appcompat.widget.AppCompatButton
-            android:id="@+id/RagisterBtn"
+            android:id="@+id/ragisterBtn"
             android:layout_width="140dp"
             android:layout_height="50dp"
             android:layout_marginBottom="45dp"
@@ -53,10 +53,10 @@
             app:layout_constraintBottom_toTopOf="@+id/textView15"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/PasswordSignUp" />
+            app:layout_constraintTop_toBottomOf="@+id/passwordSignUp" />
 
     <EditText
-        android:id="@+id/PasswordSignUp"
+        android:id="@+id/passwordSignUp"
         android:layout_width="325dp"
         android:layout_height="57dp"
         android:layout_marginTop="16dp"
@@ -71,12 +71,12 @@
         android:paddingLeft="9dp"
         android:textColor="@color/black"
         android:textSize="18sp"
-        app:layout_constraintEnd_toEndOf="@+id/EmailAddressSignUp"
-        app:layout_constraintStart_toStartOf="@+id/EmailAddressSignUp"
-        app:layout_constraintTop_toBottomOf="@+id/EmailAddressSignUp" />
+        app:layout_constraintEnd_toEndOf="@+id/emailAddressSignUp"
+        app:layout_constraintStart_toStartOf="@+id/emailAddressSignUp"
+        app:layout_constraintTop_toBottomOf="@+id/emailAddressSignUp" />
 
     <EditText
-        android:id="@+id/EmailAddressSignUp"
+        android:id="@+id/emailAddressSignUp"
         android:layout_width="325dp"
         android:layout_height="57dp"
         android:layout_marginTop="16dp"
@@ -91,9 +91,9 @@
         android:paddingLeft="9dp"
         android:textColor="@color/black"
         android:textSize="18sp"
-        app:layout_constraintEnd_toEndOf="@+id/NameStoreSignUp"
-        app:layout_constraintStart_toStartOf="@+id/NameStoreSignUp"
-        app:layout_constraintTop_toBottomOf="@+id/NameStoreSignUp" />
+        app:layout_constraintEnd_toEndOf="@+id/nameStoreSignUp"
+        app:layout_constraintStart_toStartOf="@+id/nameStoreSignUp"
+        app:layout_constraintTop_toBottomOf="@+id/nameStoreSignUp" />
 
     <TextView
         android:id="@+id/textView17"
@@ -144,7 +144,7 @@
         app:srcCompat="@drawable/madinaap_logo" />
 
     <EditText
-        android:id="@+id/NameStoreSignUp"
+        android:id="@+id/nameStoreSignUp"
         android:layout_width="325dp"
         android:layout_height="57dp"
         android:layout_marginTop="16dp"
@@ -159,12 +159,12 @@
         android:paddingLeft="9dp"
         android:textColor="@color/black"
         android:textSize="18sp"
-        app:layout_constraintEnd_toEndOf="@+id/NameUserSignUp"
-        app:layout_constraintStart_toStartOf="@+id/NameUserSignUp"
-        app:layout_constraintTop_toBottomOf="@+id/NameUserSignUp" />
+        app:layout_constraintEnd_toEndOf="@+id/nameUserSignUp"
+        app:layout_constraintStart_toStartOf="@+id/nameUserSignUp"
+        app:layout_constraintTop_toBottomOf="@+id/nameUserSignUp" />
 
     <EditText
-        android:id="@+id/NameUserSignUp"
+        android:id="@+id/nameUserSignUp"
         android:layout_width="325dp"
         android:layout_height="57dp"
         android:layout_marginTop="16dp"

@@ -1,7 +1,6 @@
 package com.madinafinal.adminmadinaeshop.adapter
 
 import android.content.Context
-import android.os.Message
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import android.widget.Toast
@@ -39,10 +38,10 @@ class PendingOrderAdapter(
                 pandingOrderFoodItemImage.setImageResource(FoodImagess[position])
 
                 OrderAcceptButton.apply {
-                    if (!isAccepted) {
-                        text = "Accept"
+                     if (!isAccepted) {
+                        "Accept"
                     } else {
-                        text = "Dispatch"
+                        "Dispatch"
                     }
                     setOnClickListener {
                         if (!isAccepted) {
