@@ -46,7 +46,7 @@
                 app:layout_constraintTop_toTopOf="@+id/backButton" />
 
             <EditText
-                android:id="@+id/enterfoodname"
+                android:id="@+id/foodName"
                 android:layout_width="0dp"
                 android:layout_height="57dp"
                 android:layout_marginStart="8dp"
@@ -66,7 +66,7 @@
                 app:layout_constraintTop_toBottomOf="@+id/textView20" />
 
             <EditText
-                android:id="@+id/enterfoodprice"
+                android:id="@+id/foodPrice"
                 android:layout_width="0dp"
                 android:layout_height="57dp"
                 android:layout_marginStart="8dp"
@@ -83,9 +83,9 @@
 
                 android:textColor="@color/black"
                 android:textSize="20sp"
-                app:layout_constraintEnd_toEndOf="@+id/enterfoodname"
-                app:layout_constraintStart_toStartOf="@+id/enterfoodname"
-                app:layout_constraintTop_toBottomOf="@+id/enterfoodname" />
+                app:layout_constraintEnd_toEndOf="@+id/foodName"
+                app:layout_constraintStart_toStartOf="@+id/foodName"
+                app:layout_constraintTop_toBottomOf="@+id/foodName" />
 
             <TextView
 
@@ -105,9 +105,9 @@
                 android:paddingRight="15dp"
                 android:textColor="@color/black"
                 android:textColorHint="@color/black"
-                app:layout_constraintEnd_toEndOf="@+id/enterfoodprice"
-                app:layout_constraintStart_toStartOf="@+id/enterfoodprice"
-                app:layout_constraintTop_toBottomOf="@+id/enterfoodprice" />
+                app:layout_constraintEnd_toEndOf="@+id/foodPrice"
+                app:layout_constraintStart_toStartOf="@+id/foodPrice"
+                app:layout_constraintTop_toBottomOf="@+id/foodPrice" />
 
             <androidx.cardview.widget.CardView
                 android:id="@+id/cardView8"
@@ -144,7 +144,7 @@
                 android:fontFamily="@font/en_4"
                 android:gravity="center_vertical"
                 android:paddingStart="15dp"
-                android:text="Decription"
+                android:text="Short Decription"
                 android:textColor="@color/black"
                 android:textSize="18sp"
                 app:layout_constraintEnd_toEndOf="parent"
@@ -178,7 +178,7 @@
                 android:layout_marginEnd="16dp"
                 android:background="@drawable/edittextshape"
                 android:fontFamily="@font/kalpurush"
-                android:hint="@string/Location_text_string"
+                android:hint="বর্ণনা লিখুন"
                 android:padding="7dp"
                 android:textColor="@color/black"
                 android:textColorHint="#1A35C6"
@@ -191,10 +191,11 @@
                 android:id="@+id/Decription"
                 android:layout_width="350dp"
                 android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
                 android:layout_marginEnd="16dp"
                 android:background="@drawable/edittextshape"
                 android:fontFamily="@font/kalpurush"
-                android:hint="@string/Location_text_string"
+                android:hint="সংক্ষিপ্ত বর্ণনা লিখুন"
                 android:padding="7dp"
                 android:textColor="@color/black"
                 android:textColorHint="#1A35C6"

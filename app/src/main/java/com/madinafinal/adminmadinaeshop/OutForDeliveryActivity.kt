@@ -3,7 +3,6 @@ package com.madinafinal.adminmadinaeshop
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.recyclerview.widget.LinearLayoutManager
-import com.madinafinal.adminmadinaeshop.adapter.AddItemAdapter
 import com.madinafinal.adminmadinaeshop.adapter.DeliveryAdapter
 import com.madinafinal.adminmadinaeshop.databinding.ActivityOutForDeliveryBinding
 
