@@ -40,8 +40,18 @@ class AddItemActivity : AppCompatActivity() {
         auth = FirebaseAuth.getInstance()
 
 
+
+
         //initilize firebase
         database = FirebaseDatabase.getInstance()
+
+
+        //  select images form gallery
+        binding.selectimage.setOnClickListener {
+
+            pickImage.launch("images/*")
+
+        }
 
         binding.AddItemButton.setOnClickListener {
             //get data from fields
@@ -57,11 +67,7 @@ class AddItemActivity : AppCompatActivity() {
                 Toast.makeText(this, "Fill all the details", Toast.LENGTH_SHORT).show()
 
             }
-            binding.selectimage.setOnClickListener {
 
-                pickImage.launch("image/*")
-
-            }
 
         }
 
