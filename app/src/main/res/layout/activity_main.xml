@@ -70,7 +70,7 @@
                 app:layout_constraintGuide_end="8dp" />
 
             <ImageView
-                android:id="@+id/imageView3"
+                android:id="@+id/pendingIcon"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:src="@drawable/attantion"
@@ -90,9 +90,10 @@
                 android:textColor="@color/green"
                 android:textSize="20sp"
                 app:layout_constraintStart_toStartOf="@+id/guideline"
-                app:layout_constraintTop_toBottomOf="@+id/imageView3" />
+                app:layout_constraintTop_toBottomOf="@+id/pendingIcon" />
 
             <TextView
+                android:id="@+id/pendingOrdersInt"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/en_2"
@@ -132,6 +133,7 @@
                 app:layout_constraintTop_toBottomOf="@+id/imageView6" />
 
             <TextView
+                android:id="@+id/completeOrdersInt"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/en_2"
@@ -167,7 +169,7 @@
                 app:layout_constraintTop_toBottomOf="@+id/imageView8" />
 
             <TextView
-                android:id="@+id/textView19"
+                android:id="@+id/holwTimeEarningInt"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="10dp"
@@ -245,6 +247,7 @@
         app:layout_constraintTop_toBottomOf="@+id/CteatNewUserCard">
 
         <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/logOutBtn"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:background="@drawable/cardgreen">

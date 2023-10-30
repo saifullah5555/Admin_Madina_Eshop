@@ -3,6 +3,7 @@ package com.madinafinal.adminmadinaeshop
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
+import android.widget.Toast
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.google.firebase.database.DataSnapshot
 import com.google.firebase.database.DatabaseError
@@ -72,9 +73,27 @@ class AllItemActivity : AppCompatActivity() {
         })
     }
     private fun setAdapter() {
-        val adapter = MenuItemAdapter(this@AllItemActivity,menuItem,databaseReference)
+        val adapter = MenuItemAdapter(this@AllItemActivity,menuItem,databaseReference){ position->
+            deleteMenuItems(position)
+        }
 
         binding.MenuRecyclerView.layoutManager = LinearLayoutManager(this)
         binding.MenuRecyclerView.adapter = adapter
+    }
+
+    private fun deleteMenuItems(position: Int) {
+        val menuItemDelete = menuItem[position]
+        val menuItemKey = menuItemDelete.key
+        val foodMenuReference = database.reference.child("menu").child(menuItemKey!!)
+        foodMenuReference.removeValue().addOnCompleteListener { task ->
+            if (task.isSuccessful){
+               menuItem.removeAt(position)
+                binding.MenuRecyclerView.adapter?.notifyItemRemoved(position)
+                Toast.makeText(this, "Item Deleted", Toast.LENGTH_SHORT).show()
+            }
+            else{
+                Toast.makeText(this, "Item not Delete", Toast.LENGTH_SHORT).show()
+            }
+        }
     }
 }

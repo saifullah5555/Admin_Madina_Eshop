@@ -13,9 +13,12 @@ import com.madinafinal.adminmadinaeshop.model.AllMenu
 class MenuItemAdapter(
     private val context: Context,
     private val menuList: ArrayList<AllMenu>,
-    databaseReference: DatabaseReference
+    databaseReference: DatabaseReference,
+    private val onDeleteClickListener: (position: Int)  -> Unit
+
 
 ) : RecyclerView.Adapter<MenuItemAdapter.AddItemViewHolder>() {
+
 
     // for quantity step 1
     private val itemQuantity = IntArray(menuList.size) { 1 }
@@ -54,7 +57,7 @@ class MenuItemAdapter(
                     plusQuantity(position)
                 }
                 DeleteButton.setOnClickListener {
-                    deleteQuantity(position)
+                    onDeleteClickListener(position)
                 }
             }
         }
@@ -81,4 +84,5 @@ class MenuItemAdapter(
         }
 
     }
+
 }

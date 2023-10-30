@@ -8,8 +8,8 @@ import androidx.recyclerview.widget.RecyclerView
 import com.madinafinal.adminmadinaeshop.databinding.DeliveryItemBinding
 
 class DeliveryAdapter(
-    private val coustomerNames: ArrayList<String>,
-    private val monystatus: ArrayList<String>,
+    private val coustomerNames: MutableList<String>,
+    private val monystatus: MutableList<Boolean>
 ) : RecyclerView.Adapter<DeliveryAdapter.DeliveryViewHolder>() {
 
 
@@ -30,9 +30,14 @@ class DeliveryAdapter(
         fun bind(position: Int) {
            binding.apply {
                CoustomerName.text = coustomerNames[position]
-               NotRecevied.text = monystatus[position]
+               if (monystatus[position] == true) {
+                   NotRecevied.text = "Received"
+               }else{
+                   NotRecevied.text = "NotReceived"
+               }
+
                val colorMap = mapOf(
-                   "Recevied" to Color.GREEN, "NotRecevied" to Color.RED, "Pending" to Color.GRAY
+                   true to Color.GREEN,false  to Color.RED,
                )
                NotRecevied.setTextColor(colorMap[monystatus[position]]?: Color.BLACK)
                StatusColor.backgroundTintList = ColorStateList.valueOf(colorMap[monystatus[position]]?:Color.BLACK)
