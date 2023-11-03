@@ -2,8 +2,8 @@ package com.madinafinal.adminmadinaeshop
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.util.Log
 import androidx.recyclerview.widget.LinearLayoutManager
+import com.google.firebase.database.FirebaseDatabase
 import com.madinafinal.adminmadinaeshop.adapter.OrderDetailsAdapter
 import com.madinafinal.adminmadinaeshop.databinding.ActivityOrderDetailssBinding
 import com.madinafinal.adminmadinaeshop.model.OrderDetails
@@ -12,6 +12,7 @@ class OrderDetailssActivity : AppCompatActivity() {
     private val binding: ActivityOrderDetailssBinding by lazy {
         ActivityOrderDetailssBinding.inflate(layoutInflater)
     }
+    private lateinit var database: FirebaseDatabase
    private lateinit var adapter: OrderDetailsAdapter
     private var userNamess: String? = null
     private var address: String? = null
@@ -46,9 +47,11 @@ class OrderDetailssActivity : AppCompatActivity() {
             phone = reservedOrderDetails.phoneNumber
             foodPrice = reservedOrderDetails.foodPrices as ArrayList<String>
             totalprice = reservedOrderDetails.totalPrices
-
+database = FirebaseDatabase.getInstance()
             setUserDetails()
             setAdapter()
+
+
         }
 
 
@@ -68,6 +71,7 @@ class OrderDetailssActivity : AppCompatActivity() {
         binding.orderDetailsRecyclerView.layoutManager = LinearLayoutManager(this)
 
         binding.orderDetailsRecyclerView.adapter = adapter
+
     }
 
 }

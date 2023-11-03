@@ -3,14 +3,12 @@ package com.madinafinal.adminmadinaeshop
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.util.Log
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.database.DataSnapshot
 import com.google.firebase.database.DatabaseError
 import com.google.firebase.database.DatabaseReference
 import com.google.firebase.database.FirebaseDatabase
 import com.google.firebase.database.ValueEventListener
-import com.google.firebase.database.ktx.getValue
 import com.madinafinal.adminmadinaeshop.databinding.ActivityMainBinding
 import com.madinafinal.adminmadinaeshop.model.OrderDetails
 
@@ -19,11 +17,16 @@ class MainActivity : AppCompatActivity() {
         ActivityMainBinding.inflate(layoutInflater)
     }
     private lateinit var database: FirebaseDatabase
-    private lateinit var auth: FirebaseAuth
+    private val auth = FirebaseAuth.getInstance()
     private lateinit var completedOrderReference: DatabaseReference
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+
+
+
+
+
         setContentView(binding.root)
 
 
@@ -57,13 +60,16 @@ class MainActivity : AppCompatActivity() {
             startActivity(intent)
         }
 
-        // problem
-        binding.logOutBtn.setOnClickListener {
+        binding.LogOutBtn.setOnClickListener {
             auth.signOut()
-            startActivity(Intent(this,SignUpActivity::class.java))
-            finish()
+            val intent = Intent(this,LoginActivity::class.java)
+
+            startActivity(intent)
 
         }
+
+
+
 
         pendingOrder()
 
@@ -71,7 +77,10 @@ class MainActivity : AppCompatActivity() {
 
         wholeTimeEarning()
 
+
+
     }
+
 
     private fun wholeTimeEarning() {
         var listOfTotalPay = mutableListOf<Int>()
@@ -89,7 +98,7 @@ class MainActivity : AppCompatActivity() {
             }
 
             override fun onCancelled(error: DatabaseError) {
-                TODO("Not yet implemented")
+
             }
         })
     }
@@ -105,7 +114,7 @@ class MainActivity : AppCompatActivity() {
             }
 
             override fun onCancelled(error: DatabaseError) {
-                TODO("Not yet implemented")
+
             }
         })
 
@@ -129,4 +138,5 @@ class MainActivity : AppCompatActivity() {
         })
 
     }
+
 }

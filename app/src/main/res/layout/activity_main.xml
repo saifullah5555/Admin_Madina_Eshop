@@ -235,7 +235,7 @@
     </androidx.cardview.widget.CardView>
 
     <androidx.cardview.widget.CardView
-        android:id="@+id/cardView7"
+        android:id="@+id/LogOutBtn"
         android:layout_width="150dp"
         android:layout_height="100dp"
         android:layout_marginTop="60dp"
@@ -247,7 +247,6 @@
         app:layout_constraintTop_toBottomOf="@+id/CteatNewUserCard">
 
         <androidx.constraintlayout.widget.ConstraintLayout
-            android:id="@+id/logOutBtn"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:background="@drawable/cardgreen">

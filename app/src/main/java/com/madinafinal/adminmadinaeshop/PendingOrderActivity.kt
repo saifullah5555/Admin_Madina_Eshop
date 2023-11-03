@@ -40,11 +40,6 @@ class PendingOrderActivity : AppCompatActivity(), PendingOrderAdapter.OnItemClic
             finish()
         }
 
-
-        //    val adapter = PendingOrderAdapter()
-
-        //  binding.PendingOrderRecycleView.adapter = adapter
-        //    binding.PendingOrderRecycleView.layoutManager = LinearLayoutManager(this)
     }
 
     private fun getOrderDetails() {
