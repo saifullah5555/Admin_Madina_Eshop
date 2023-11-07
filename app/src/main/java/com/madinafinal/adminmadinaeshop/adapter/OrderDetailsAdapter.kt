@@ -22,6 +22,7 @@ class OrderDetailsAdapter(
         val binding =
             OrderDetailsItemBinding.inflate(LayoutInflater.from(parent.context), parent, false)
         return OrderDetailsViewHolder(binding)
+
     }
 
 

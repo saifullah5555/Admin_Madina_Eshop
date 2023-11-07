@@ -69,6 +69,8 @@ class PendingOrderActivity : AppCompatActivity(), PendingOrderAdapter.OnItemClic
             orderItem.totalPrices?.let { listOfTotalPrice.add(it) }
             orderItem.foodImages?.filterNot { it.isEmpty() }?.forEach {
                 listOfImageFirstFoodOrder.add(it)
+
+
             }
         }
         setAdapter()
@@ -79,6 +81,7 @@ class PendingOrderActivity : AppCompatActivity(), PendingOrderAdapter.OnItemClic
         val adapter =
             PendingOrderAdapter(this, listOfName, listOfTotalPrice, listOfImageFirstFoodOrder, this)
         binding.PendingOrderRecycleView.adapter = adapter
+
     }
 
     override fun onItemClickListener(position: Int) {

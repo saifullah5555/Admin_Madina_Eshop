@@ -13,7 +13,7 @@ class OrderDetailssActivity : AppCompatActivity() {
         ActivityOrderDetailssBinding.inflate(layoutInflater)
     }
     private lateinit var database: FirebaseDatabase
-   private lateinit var adapter: OrderDetailsAdapter
+    private lateinit var adapter: OrderDetailsAdapter
     private var userNamess: String? = null
     private var address: String? = null
     private var phone: String? = null
@@ -40,14 +40,19 @@ class OrderDetailssActivity : AppCompatActivity() {
         val reservedOrderDetails = intent.getSerializableExtra("UserOrderDetails") as OrderDetails
         reservedOrderDetails.let { orderDetails ->
             userNamess = reservedOrderDetails.userName
+            address = reservedOrderDetails.address
+            phone = reservedOrderDetails.phoneNumber
+            totalprice = reservedOrderDetails.totalPrices
+
+            foodNames = reservedOrderDetails.foodNames as ArrayList<String>
             foodImages = reservedOrderDetails.foodImages as ArrayList<String>
             foodQuantity = reservedOrderDetails.foodQuantities as ArrayList<Int>
             foodPrice = reservedOrderDetails.foodPrices as ArrayList<String>
-            address = reservedOrderDetails.address
-            phone = reservedOrderDetails.phoneNumber
-            foodPrice = reservedOrderDetails.foodPrices as ArrayList<String>
-            totalprice = reservedOrderDetails.totalPrices
-database = FirebaseDatabase.getInstance()
+
+
+
+
+            database = FirebaseDatabase.getInstance()
             setUserDetails()
             setAdapter()
 
@@ -69,7 +74,6 @@ database = FirebaseDatabase.getInstance()
 
         adapter = OrderDetailsAdapter(this, foodNames, foodImages, foodQuantity, foodPrice)
         binding.orderDetailsRecyclerView.layoutManager = LinearLayoutManager(this)
-
         binding.orderDetailsRecyclerView.adapter = adapter
 
     }
