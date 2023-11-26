@@ -21,6 +21,17 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent">
 
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardView8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:elevation="6dp"
+                android:outlineSpotShadowColor="@color/green"
+                app:cardCornerRadius="15dp"
+                app:layout_constraintEnd_toEndOf="@+id/selectimage"
+                app:layout_constraintStart_toStartOf="@+id/selectimage"
+                tools:layout_editor_absoluteY="501dp" />
+
             <ImageButton
                 android:id="@+id/backButton"
                 android:layout_width="30dp"
@@ -110,10 +121,9 @@
                 app:layout_constraintTop_toBottomOf="@+id/foodPrice" />
 
             <androidx.cardview.widget.CardView
-                android:id="@+id/cardView8"
+                android:id="@+id/cardView9"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="24dp"
                 android:elevation="6dp"
                 android:outlineSpotShadowColor="@color/green"
                 app:cardCornerRadius="15dp"
@@ -149,7 +159,7 @@
                 android:textSize="18sp"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/cardView8" />
+                app:layout_constraintTop_toBottomOf="@+id/cardView9" />
 
             <TextView
                 android:id="@+id/textView2"
@@ -221,6 +231,27 @@
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="@+id/Ingradint"
                 app:layout_constraintTop_toBottomOf="@id/Ingradint" />
+
+            <ImageView
+                android:id="@+id/imageView10"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                app:layout_constraintEnd_toStartOf="@+id/cardView9"
+                app:layout_constraintStart_toStartOf="parent"
+                tools:layout_editor_absoluteY="356dp"
+                tools:srcCompat="@tools:sample/backgrounds/scenic" />
+
+            <Button
+                android:id="@+id/button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="Button"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="@+id/AddItemButton"
+                app:layout_constraintStart_toStartOf="@+id/AddItemButton"
+                app:layout_constraintTop_toBottomOf="@+id/AddItemButton" />
+
         </androidx.constraintlayout.widget.ConstraintLayout>
 
     </ScrollView>
